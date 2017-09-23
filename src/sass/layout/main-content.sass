@@ -1,0 +1,448 @@
+*
+  transition: all .3s
+
+.main
+  padding: 130px 0 45px
+  @include media(878px)
+    padding: 80px 0 50px
+  @include media(561px)
+    padding: 25px 0 58px
+
+.container-form
+  width: $container-width-form
+  padding: 0 15px
+  margin: 0 auto
+  display: flex
+  @include media(1081px)
+    width: 870px
+  @include media(878px)
+    width: 668px
+  @include media(687px)
+    width: 520px
+  @include media(561px)
+    width: 280px
+    flex-flow: column wrap
+    padding: 0 10px
+
+.main__title-wrap
+  width: 700px
+  margin: 0 auto
+  @include media(1081px)
+    width: 100%
+
+.text
+  color: $base-text-color
+  font-family: $base-ff
+  @include rem(16)
+  font-weight: 400
+  line-height: 1.875rem
+  @include media(561px)
+    @include rem(14)
+    line-height: 1.7142rem
+    display: inline
+
+.group
+  padding: 50px 0
+  @include media(878px)
+    padding: 60px 0
+  @include media(561px)
+    padding: 30px 0 0 0
+
+.group:nth-child(even)
+  background-color: $bg-color-form
+  @include media(561px)
+    background-color: #fff
+
+.name-field
+  width: 175px
+  display: flex
+  justify-content: center
+  @include media(1081px)
+    justify-content: flex-start
+
+.name-field__text
+  color: $acc-color-form
+  font-family: $base-ff
+  @include rem(16)
+  font-weight: 700
+  line-height: 1rem
+  text-transform: uppercase
+  display: inline-block
+  padding-top: 20px
+  @include media(561px)
+    display: inline
+    padding-top: 0
+    position: relative
+    &:after
+      content: ""
+      display: block
+      width: 198px
+      height: 1px
+      background-color: $acc-color-form
+      position: absolute
+      left: 62px
+      bottom: 8px
+
+.label
+  display: flex
+  align-items: center
+
+.radio-wrap
+  display: block
+  width: 700px
+  @include media(561px)
+    display: block
+    margin: 30px 0 0 0
+    width: 100%
+
+.radio-wrap__input
+  margin-bottom: 25px
+  @include media(561px)
+    margin-bottom: 20px
+
+.radio-wrap__input:last-child
+  margin-bottom: 0
+
+input[type="radio"]
+  display: none
+
+.radio-btn
+  width: 52px
+  height: 52px
+  border: 2px solid rgb(68, 68, 68)
+  border-radius: 50%
+  margin-right: 30px
+  &:hover
+    border-color: $acc-color-form
+  &:active
+    border-color: rgba(68, 68, 68, .3)
+  @include media(561px)
+    margin-right: 21px
+
+input[type="radio"]:checked + .radio-btn
+  background: url(../img/radio-check.png) center center no-repeat
+
+.label-text
+  color: $label-text-color
+  font-family: $label-ff
+  @include media(561px)
+    width: 185px
+
+.checkbox-wrap__input
+  display: flex
+  width: 875px
+  flex-flow: row wrap
+  margin-bottom: -24px
+  @include media(1081px)
+    width: 675px
+  @include media(878px)
+    width: 505px
+  @include media(687px)
+    width: 390px
+  @include media(561px)
+    margin-top: 25px
+    margin-bottom: 0
+    width: 260px
+
+.label-checkbox
+  width: 245px
+  margin-right: 20px
+  margin-bottom: 24px
+  @include media(1081px)
+    width: 325px
+    &:nth-child(even)
+      margin-right: 0
+  @include media(878px)
+    width: 240px
+  @include media(561px)
+    &:last-child
+      margin-bottom: 0
+
+input[type="checkbox"]
+  display: none
+  
+.checkbox-btn
+  width: 54px
+  height: 52px
+  border: 2px solid rgb(68, 68, 68)
+  margin-right: 30px
+  &:hover
+    border-color: $acc-color-form
+  &:active
+    border-color: rgba(68, 68, 68, .3)
+
+.label-text--checkbox
+  @include media(561px)
+    width: 155px
+
+input[type="checkbox"]:checked + .checkbox-btn
+  background: url(../img/checkbox-check.png) center center no-repeat
+
+.input-wrap
+  display: flex
+  flex-flow: column wrap
+  width: 700px
+  position: relative
+  @include media(561px)
+    width: 260px
+
+.name-field__text-input
+  padding-top: 18px
+  @include media(561px)
+    padding-top: 0
+    margin-bottom: 35px
+
+.lebel-text-input
+  margin-top: 30px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &:first-child
+    margin-top: 0
+  @include media(561px)
+    display: block
+    padding-bottom: 5px
+    margin-top: 20px
+
+.input-field
+  border: none
+  border-bottom: 2px solid #444
+  height: 52px
+  margin-left: 23px
+  width: 100%
+  background-color: transparent
+  padding: 15px 45px 15px 15px
+  color: #444
+  font-family: 'Verdana'
+  @include rem(18)
+  line-height: 1rem
+  font-weight: 400
+  @include media(561px)
+    margin-left: 0
+    padding: 15px 0
+  &:hover
+    border-color: $acc-color-form
+  &:active
+    border-color: $acc-color-form
+  &::-webkit-input-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:-moz-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &::-moz-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:-ms-input-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:focus
+    color: #444
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:invalide
+    border-color: #f0b1b1
+  &:focus::-webkit-input-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus:-moz-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus::-moz-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus:-ms-input-placeholder
+    opacity: 0
+    transition: opacity .2s
+
+.group-contact
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.name-field-contact
+  display: flex
+  flex-direction: row
+  text-align: center
+  margin-top: 30px
+  width: 100%
+  align-items: center
+  @include media(1081px)
+    text-align: left
+  @include media(561px)
+    display: block
+
+.name-field-contact:first-child
+  margin-top: 0
+
+.name-field__text-contact
+  width: 175px
+  justify-content: center
+  padding-top: 3px
+
+.input-field-contact
+  margin-left: 0
+
+.add-box
+  display: flex
+  flex-flow: column wrap
+
+.add-container
+  display: flex
+  flex-flow: row wrap
+
+.name-field__text-comment
+  padding-top: 3px
+  @include media(561px)
+    margin-bottom: 30px
+
+.input-comment
+  border: 2px solid #444
+  height: 142px
+  background-color: transparent
+  margin-bottom: 90px
+  &:hover
+    border-color: $acc-color-form
+  @include media(878px)
+    margin-bottom: 50px
+  @include media(561px)
+    margin-bottom: 57px
+
+.input-comment__field
+  border: none
+  padding: 15px
+  width: 100%
+  height: 100%
+  resize: none
+  color: #444
+  font-family: 'Verdana'
+  @include rem(18)
+  line-height: 1rem
+  font-weight: 400
+  &:hover
+    border-color: $acc-color-form
+  &:active
+    border-color: $acc-color-form
+  &::-webkit-input-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:-moz-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &::-moz-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:-ms-input-placeholder
+    color: #444
+    opacity: .3
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:focus
+    color: #444
+    font-family: 'Verdana'
+    @include rem(18)
+    line-height: 1rem
+    font-weight: 400
+  &:invalide
+    border-color: #f0b1b1
+  &:focus::-webkit-input-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus:-moz-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus::-moz-placeholder
+    opacity: 0
+    transition: opacity .2s
+  &:focus:-ms-input-placeholder
+    opacity: 0
+    transition: opacity .2s
+
+.input-wrap-submit
+  display: flex
+  align-items: center
+  width: 700px
+  margin: 0 auto
+  @include media(1081px)
+    width: 100%
+
+.submit-wrap
+ @include media(687px)
+  width: 100%
+
+.submit
+  width: 100%
+
+.btn-submit
+  border: 2px solid #444
+  background-color: transparent
+  display: block
+  padding: 15px 35px
+  font-family: 'Open Sans Bold'
+  color: $base-text-color
+  text-transform: uppercase
+  @include rem(16)
+  cursor: pointer
+  @include media(687px)
+    width: 100%
+    text-align: center
+  &:hover
+    background-color: #444
+    color: #fff
+  &:active
+    background-color: #444
+    color: rgba(255, 255, 255, .3)
+
+.submit-wrap__text
+  margin-left: auto
+  @include media(687px)
+    margin-left: 0
+    margin-top: 20px
+    display: none
+    
+.input-icon
+  position: absolute
+  right: 4px
+  top: 50%
+  transform: translateY(-50%)
+
+.input-wrap:hover .phone-svg,
+.input-wrap:hover .mail-svg
+  fill: $acc-color
+
+.input-wrap:focus .phone-svg,
+.input-wrap:focus .mail-svg
+  fill: $acc-color

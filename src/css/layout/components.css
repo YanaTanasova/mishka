@@ -1,0 +1,97 @@
+@import url(../fonts/fonts.css);
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, ul, li, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1095px) {
+    .container {
+      padding: 0 50px; } }
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0 30px; } }
+
+.container-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.title {
+  font-family: "Verdana Bold", sans-serif;
+  font-weight: normal;
+  font-size: 3.125rem;
+  line-height: 1.14;
+  color: #000; }
+  @media screen and (max-width: 1095px) {
+    .title {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 767px) {
+    .title {
+      font-size: 1.5rem;
+      line-height: 1.25; } }
+
+.desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.88;
+  color: #444; }
+  @media screen and (max-width: 767px) {
+    .desc {
+      font-size: 0.875rem;
+      line-height: 1.71; } }
+
+.btn {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 1rem;
+  color: #444;
+  border: 2px solid #444;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  background: none;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .btn:hover {
+    background: #444;
+    color: #fff; }
+
+.line:after {
+  content: '';
+  width: 100%;
+  height: 23px;
+  display: block;
+  background: url(../img/zigzag-line.png) repeat-x center center;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  @media screen and (max-width: 1095px) {
+    .line:after {
+      height: 15px; } }
+  @media screen and (max-width: 767px) {
+    .line:after {
+      height: 6px; } }
