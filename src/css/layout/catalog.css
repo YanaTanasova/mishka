@@ -1,0 +1,29 @@
+.items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    display-justify-content: space-between; }
+
+.rabbit {
+  margin: 130px 50px 0 50px;
+  border: 2px solid #ececec;
+  height: 660px; }
+
+.title {
+  font-family: Verdana, sans-serif;
+  font-size: 18px; }
+
+.desc {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  color: #696969; }
+
+.price {
+  font-family: Verdana;
+  font-size: 16px; }
+
+.cart {
+  text-align: right; }
+
+/*# sourceMappingURL=catalog.css.map */

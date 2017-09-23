@@ -1,0 +1,32 @@
+@import "../fonts/fonts.css"
+
+$container-width: 1080px
+
+*
+	box-sizing: border-box
+
+html, body
+	margin: 0
+	padding: 0
+
+h1, h2, h3, h4, h5, h6, p, ul, li, figure
+	margin: 0
+	padding: 0
+
+ul
+	list-style: none
+
+a
+	text-decoration: none
+	color: inherit
+
+.container
+	max-width: $container-width
+	padding: 0 15px
+	margin: 0 auto
+
+	@media screen and (max-width: 1095px)
+		padding: 0 50px
+
+	@media screen and (max-width: 767px)
+		padding: 0 30px
