@@ -1,0 +1,67 @@
+
+/* header-bottom */
+
+.header-bottom
+	background: #f1f1f1
+	padding-top: 18px
+	padding-bottom: 105px
+	position: relative
+
+	@include media(767px)
+		padding-top: 0
+		padding-bottom: 70px
+
+	&__container
+		position: relative
+		height: 100%
+
+	&__list
+		display: flex
+
+	&__item
+		font-family: 'Verdana', sans-serif
+		@include rem(14)
+		color: $desc-color
+		margin-right: 60px
+
+		&:last-child
+			margin-right: 0
+			margin-left: auto
+
+			@include media(767px)
+				display: none
+
+	&__link
+		font-family: $title-font
+		color: $title-color
+		transition: color .3s
+
+		@include media(1095px)
+			display: none
+
+		&:hover
+			color: $link-hover-color
+
+	&__title
+		color: #231f20
+		text-align: center
+		max-width: 630px
+		margin: 55px auto 0
+
+		@include media(767px)
+			max-width: 400px
+			margin-top: 70px
+
+	&:after
+		content: ''
+		width: 100%
+		height: 34px
+		display: block
+		background: url(../img/zigzag-fill.png) repeat-x center
+		position: absolute
+		bottom: -19px
+		left: 0
+
+		@include media(767px)
+			display: none
+
