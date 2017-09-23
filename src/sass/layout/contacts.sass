@@ -1,0 +1,132 @@
+/* contacts */
+
+.contacts
+	padding: 72px 0 106px
+
+	@include media(1095px)
+		padding: 60px 0 58px
+
+	@include media(767px)
+		padding: 38px 0 40px
+
+	&__container
+		padding-left: 190px
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-end
+		position: relative
+
+		@include media(1095px)
+			padding: 0 0 114px 0
+			flex-direction: column
+			align-items: stretch
+
+
+	&__title
+		position: relative
+
+		&:before
+			content: ''
+			display: block
+			width: 175px
+			height: 81px
+			background: url(../img/flag.svg) no-repeat center center
+			position: absolute
+			top: 0
+			right: 100%
+
+			@include media(1095px)
+				right: 0
+				top: -15px
+				width: 47px
+
+			@include media(767px)
+				display: none
+
+	&__desc
+		margin-top: 48px
+
+		@include media(1095px)
+			display: flex
+			justify-content: space-between
+
+		@include media(767px)
+			display: block
+			margin-top: 30px
+
+		&-wrap
+			max-width: 300px
+			padding-right: 50px
+
+			@include media(1095px)
+				max-width: 100%
+				padding: 0 50px
+
+			@include media(767px)
+				padding: 0 30px
+				
+	&__list
+		display: flex
+		align-items: flex-start
+		margin-top: 30px
+
+		&:first-child
+			margin-top: 0
+
+		@include media(1095px)
+			width: 50%
+			margin-top: 0
+			margin-right: 65px
+
+			&:last-child
+				margin-right: 0
+
+		@include media(767px)
+			margin-top: 30px
+			width: 100%
+
+	&__item
+		flex-shrink: 0
+		max-width: 210px
+
+		&:nth-child(2n)
+			margin-left: 25px
+
+		@include media(767px)
+			max-width: 100%
+			flex-shrink: 1
+
+	&__link
+		border-bottom: 1px solid $acc-color
+		transition: color .3s
+
+		&:hover
+			color: $acc-color
+
+	&__btn-wrap
+		margin-top: 80px
+
+		@include media(1095px)
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+
+		@include media(767px)
+			width: 100%
+			padding: 0 30px
+			margin-top: 40px
+		
+		.btn
+			@include media(767px)
+				width: 100%
+				text-align: center
+
+.map
+	width: 525px
+	height: 458px
+	font-size: 0
+
+	@include media(1095px)
+		width: 100%
+		margin-top: 58px

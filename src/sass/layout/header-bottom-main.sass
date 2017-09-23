@@ -3,13 +3,16 @@
 
 .header-bottom
 	background: $bg-color url(../img/main-page-header-bg.jpg) no-repeat center top
-	background-size: cover
 	padding-top: 18px
 	height: 746px
 	position: relative
 
 	@include media(767px)
 		height: 100vh
+		background-size: cover
+		background-origin: content-box
+		padding-top: 0
+		padding-bottom: 220px
 
 	&__container
 		position: relative
@@ -51,6 +54,7 @@
 
 		@include media(767px)
 			max-width: 400px
+			margin-top: 85px
 
 	&:after
 		content: ''
@@ -76,13 +80,14 @@
 
 	@include media(767px)
 		bottom: -133px
-		margin-bottom: 133px
+		margin-bottom: -87px
 
 	&__list
 		display: flex
 
 		@include media(767px)
 			display: block
+
 
 	&__item
 		width: 50%

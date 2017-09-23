@@ -1,0 +1,179 @@
+
+/* header */
+
+/* top-header */
+
+.top-header
+	border-bottom: 1px solid rgba(0, 0, 0, .1)
+
+	&__container
+		position: relative
+
+		@include media(1095px)
+			display: flex
+			justify-content: space-between
+
+		@include media(767px)
+			display: block
+			padding: 0
+
+/* logo */
+
+.logo
+	@include posCenter
+
+	&__link
+		display: block
+		margin-top: 5px
+
+	&:hover #bg,
+	&:hover #bg2
+		fill: #666
+
+	@include media(1095px)
+		position: relative
+		left: -12px
+		transform: translate(0)
+
+	@include media(767px)
+		text-align: center
+		left: 0
+
+/* nav */
+
+.nav
+	display: flex
+	align-items: center
+
+	@include media(767px)
+		display: block
+
+	&__list
+		display: flex
+		align-items: center
+
+		@include media(767px)
+			display: block
+
+	&__item
+		color: $title-color
+		font-family: $title-font
+		padding: 30px
+		font-size: 1rem
+		border-left: 1px solid rgba(0, 0, 0, .1)
+
+		@include media(767px)
+			width: 100%
+			padding: 28px 30px 28px 0
+			border-left: none
+			border-top: 1px solid rgba(0, 0, 0, .1)
+
+		&:last-child
+			padding-right: 0
+
+			@include media(767px)
+				padding-right: 30px
+
+		&--search
+			font-size: 0
+
+	&__link
+		vertical-align: top
+		transition: color .3s
+		&:hover
+			color: $link-hover-color
+
+.nav__list--left-wrap .nav__item:first-child
+	padding-left: 0
+	border-left: none
+
+	@include media(767px)
+		padding-left: 75px
+
+.nav__list--right-wrap
+	margin-left: auto
+
+@include media(1095px)
+
+	.nav__item--tablet
+		@include rem(14)
+		border: none
+		padding: 20px 15px
+
+		@include media(767px)
+			padding: 28px 30px 28px 75px
+			@include rem(16) 
+			border-top: 1px solid rgba(0, 0, 0, .1)
+
+	.nav__list--left-wrap
+		position: absolute
+		top: 100%
+		left: 50px
+		z-index: 20
+		
+		@include media(767px)
+			position: static
+
+.search
+	&:hover
+		.search-svg
+			fill: $acc-color
+
+.nav__icon
+	@include media(767px)
+		display: inline-block
+		width: 45px
+		margin-left: 30px
+
+.search__title
+	display: none
+
+	@include media(767px)
+		display: inline-block
+		font-size: 1rem
+		vertical-align: top
+
+.cart
+
+	@include media(767px)
+		font-size: 0
+
+	&__icon
+		padding-right: 18px
+
+		@include media(767px)
+			padding-right: 0
+
+	&:hover
+		.cart-svg
+			fill: $acc-color
+
+	&__desc
+		vertical-align: top
+		font-size: 1rem
+
+/* responsive btn */
+
+.responsive-btn
+	display: none
+
+	@include media(767px)
+		display: block
+		position: absolute
+		top: 23px
+		right: 30px
+		cursor: pointer
+		transition: all .3s
+
+.responsive-btn--open
+	transform: translateY(-50px)
+
+.open--show
+	transform: translateY(0)
+
+.responsive-btn--close
+	transform: translateX(0)
+	top: 21px
+
+.close--hide
+	transform: translateX(55px)

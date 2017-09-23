@@ -1,0 +1,105 @@
+/* testimonials */
+
+.testimonials
+	padding-bottom: 90px
+	position: relative
+
+	@include media(767px)
+		padding: 20px 0 50px
+
+	&__container
+		background: url(../img/testimonials-bg.jpg) no-repeat left center
+		padding: 70px 15px 95px 190px 
+
+		@include media(1095px)
+			padding: 70px 50px 95px 50px
+
+		@include media(767px)
+			padding: 0 30px
+			background: none
+
+	&__content
+		display: flex
+		align-items: stretch
+		position: relative
+
+		@include media(767px)
+			display: block
+
+	&__desc-wrap
+		max-width: 700px
+
+	&__desc
+		margin-top: 45px
+
+		@include media(767px)
+			margin-top: 28px
+
+	&__name
+		font-family: $title-font
+		font-size: 1rem
+		line-height: 1.5
+		margin-top: 15px
+	
+	&__nickname
+		display: block
+
+	&__right-elements
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin-top: 32px
+
+	&__btn
+		margin-top: 5px
+
+		@include media(1095px)
+			position: absolute
+			top: 0
+			right: 0
+			margin-top: 4px
+
+		@include media(767px)
+			position: static
+			text-align: center
+			order: 2
+			margin-top: 38px
+
+	&__arrows
+		text-align: center
+
+		@include media(1095px)
+			position: absolute
+			bottom: 0
+			right: 0
+			padding: 0 20px
+
+		@include media(767px)
+			position: static
+			order: 1
+			font-size: 0
+			padding: 0
+
+
+.arrow
+	display: inline-block
+	cursor: pointer
+	margin-bottom: 12px
+
+	&:hover .arrow-svg
+		fill: #666
+
+	@include media(767px)
+		margin-bottom: 0
+		width: 49%
+		padding: 12px 0
+		border: 1px solid #ececec
+
+	&-left
+		margin-right: 35px
+
+		@include media(767px)
+			margin-right: 0
+			border-right: none
+	
+		
