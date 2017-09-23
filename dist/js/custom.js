@@ -4,7 +4,7 @@ $(function() {
     
     	$("#js-nav").slideUp();
     	$("#js-responsive-btn--open").addClass("open--show");
-    	$(this).addClass("close--hide")
+    	$(this).addClass("close--hide");
     });
 
     $("#js-responsive-btn--open").on("click", function(){
