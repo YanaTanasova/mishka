@@ -1,0 +1,253 @@
+
+.items
+	padding: 110px 0 57px
+
+	@media screen and (max-width:1095px)
+		padding: 80px 0 57px
+
+	@media screen and (max-width: 767px)
+		padding: 30px 0 
+
+.items__info
+	padding: 0 28px
+	border: 1px solid #ececec
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+
+	@media screen and (max-width:1095px)
+		min-height: 334px
+		width: 100%
+		border-left: none
+
+	@media screen and (max-width: 767px)
+		min-height: auto
+		border: none
+
+
+.items__img-wrap
+	font-size: 0
+	@media screen and (max-width:1095px)
+		flex-shrink: 0
+
+.items__img 
+	width: 100%
+
+	
+.items__list
+	display: flex
+	flex-wrap: wrap 
+	justify-content: space-between
+	align-items: stretch 
+
+	@media screen and (max-width:1095px)
+		display: block
+
+		
+.items__title
+	font-family: 'Verdana Bold', sans-serif
+	font-size: 1.125rem
+
+	@media screen and (max-width: 767px)
+		font-size: 1rem
+
+.items__item
+	max-width: 315px
+	display: flex
+	flex-direction: column
+	transition: box-shadow .3s
+
+	@media screen and (max-width:1095px)
+		max-width: 100%
+		flex-direction: row
+		margin-top: 54px
+
+	@media screen and (max-width: 767px)
+		display: block
+		border: 1px solid #ececec
+		margin-top: 30px
+
+.items__item:first-child
+	margin-top: 0
+
+
+.items__desc
+	font-family: 'Open Sans', sans-serif
+	font-size: 0.9375rem
+	margin-top: 15px
+
+	@media screen and (max-width: 767px)
+		font-size: .875rem
+
+.items__desc-wrap
+	padding: 25px 0 40px
+	display: flex 
+	flex-direction: column
+	justify-content: space-between
+
+			
+.items__price
+	font-family: 'Verdana Bold', sans-serif
+	font-size: 1rem
+	line-height: 1.5
+
+	@media screen and (max-width: 767px)
+		font-size: .875rem
+
+		
+.items__price-wrap
+	padding: 20px 0
+	display: flex
+	justify-content: space-between
+	border-top: 1px solid #ececec
+	align-items: flex-end
+
+.items__link
+	transition: color .3s
+
+.items__link:hover
+	color: #8d8d8d
+
+.items__item:hover
+	box-shadow: 0px 6px 10px  rgba(0, 0, 0, .1)
+		
+.items__icon:hover .cart-icon
+	fill: #63d1bb
+
+
+.video
+	padding-bottom: 106px
+
+	@media screen and (max-width:1095px)
+		padding-bottom: 63px
+
+.video__figure
+	display: flex
+	border: 1px solid #ececec
+	transition: box-shadow .3s
+	
+	@media screen and (max-width:1095px)
+		display: block
+		border: none
+
+	@media screen and (max-width: 767px)
+		position: relative
+		padding-top: 95px
+		border: 1px solid #ececec
+
+
+.video__figure:hover
+	box-shadow: 0px 6px 10px  rgba(0, 0, 0, .1)
+
+.video__img-wrap
+	position: relative
+	font-size: 0
+	flex-shrink: 0
+
+	@media screen and (max-width:1095px)
+		width: 100%
+
+.video__img
+	width: 100%
+
+.play__icon
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	cursor: pointer
+
+.play__icon:hover .play-svg
+	transform: scale(1.2)
+
+
+.video__figcaption
+	padding-left: 80px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+
+	@media screen and (max-width:1095px)
+		padding-top: 37px
+		padding-right: 42px
+		padding: 37px 43px 46px
+		border: 1px solid #ececec
+
+	@media screen and (max-width: 767px)
+		padding: 30px
+		border: none
+
+.video__title
+	font-family: 'Verdana Bold', sans-serif
+	font-size: 1.125rem
+	font-weight: normal
+	padding-right: 60px
+	line-height: 1.5
+	position: relative
+
+	@media screen and (max-width:1095px)
+		padding-left: 65px
+
+	@media screen and (max-width: 767px)
+		font-size: 1rem
+		position: absolute
+		top: 25px
+		left: 50%
+		padding-left: 56px
+		padding-right: 0
+		transform: translateX(-50%)
+
+.video__desc
+	font-family: 'Open Sans', sans-serif
+	font-size: 1rem
+	line-height: 1.875
+	margin-top: 30px
+
+	@media screen and (max-width: 767px)
+		font-size: .875rem
+
+	@media screen and (max-width: 767px)
+		margin-top: 0
+
+.video__btn
+	color: #444
+	font-family: 'Open Sans Bold', sans-serif
+	font-size: 1rem
+	padding: 15px 60px
+	border: 2px solid #444 
+	display: inline-block
+	text-transform: uppercase
+	transition: all .3s
+	margin-top: 40px
+
+	@media screen and (max-width:1095px)
+		width: 100%
+		text-align: center
+
+	@media screen and (max-width: 767px)
+		padding: 15px 20px
+	
+	&:hover
+		background: #444
+		color: #fff 
+
+.video__icon
+	margin-bottom: 20px
+
+	@media screen and (max-width:1095px)
+		position: absolute
+		left: 0
+		top: 0
+
+	@media screen and (max-width: 767px)
+		margin-bottom: 0
+		top: 50%
+		transform: translateY(-50%)
+
+
+
+
+
+

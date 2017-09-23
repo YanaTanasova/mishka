@@ -1,0 +1,58 @@
+/* footer */
+
+.footer
+	padding: 50px 0
+	background: $footer-color
+
+	@include media(767px)
+		padding: 0
+
+	&__container
+		justify-content: space-between
+		position: relative
+
+		@include media(767px)
+			display: block
+			text-align: center
+
+	&__logo
+		&:hover .logo-footer-svg
+			fill: $acc-color
+
+		@include media(767px)
+			display: none
+
+	&__author
+		font-family: $title-font
+		@include rem(18)
+
+		&:hover .academy-svg
+			fill: $second-acc-color
+
+.author__icon
+	display: inline-block
+	vertical-align: middle
+	margin-left: 20px
+
+	@include media(767px)
+		padding: 24px 0
+
+.social
+	@include posCenter
+
+	@include media(767px)
+		position: static
+		transform: translate(0)
+		padding: 24px 0
+		border-bottom: 1px solid #ececec
+
+	&__item
+		display: inline-block
+		margin-right: 40px
+		vertical-align: middle
+
+		&:last-child
+			margin-right: 0
+			
+.social__link:hover .social-svg
+	fill: $acc-color
